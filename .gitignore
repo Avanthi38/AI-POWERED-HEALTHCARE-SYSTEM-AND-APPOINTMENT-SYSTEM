@@ -1,0 +1,63 @@
+# ==========================================
+# 🐍 Python / Backend Environment Controls
+# ==========================================
+# Virtual environments (Blocks both your root and inner folders)
+venv/
+backend/venv/
+.venv/
+env/
+ENV/
+
+# Python caching mechanisms
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Local Relational Database Files (SQLite)
+# Prevents overwriting local test accounts/appointments
+*.db
+*.sqlite3
+backend/instance/
+
+# Configuration Environment Secrets (Crucial for security)
+.env
+.env.local
+.env.*.local
+
+# ==========================================
+# 🎨 Frontend / Node / Vite Framework Controls
+# ==========================================
+# Block massive dependency folders
+node_modules/
+frontend/node_modules/
+/dist
+/build
+
+# Local logs and debug data
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+
+# Vite/TS design cache configurations
+.vite/
+.project
+.tscache/
+
+# ==========================================
+# 🧠 Machine Learning Artifact Rules
+# ==========================================
+# Keeps massive compiled model binaries out of git 
+# (You train them locally using train_model.py instead)
+*.joblib
+*.pkl
+*.pickle
+ML/model_pack.joblib
+
+# ==========================================
+# 🪟 Windows System Garbage
+# ==========================================
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
